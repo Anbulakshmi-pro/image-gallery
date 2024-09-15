@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Image Gallery </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+ <body>
+
+    <div class="fullimg" id="fullimgbox">
+        <img src="https://as2.ftcdn.net/v2/jpg/08/57/07/49/1000_F_857074992_BIEIFGvat0pEBOaZFEDH8mmSHQF0m6HW.jpg" id="fullimg"/>
+        <span onclick="closeimg()"> X </span> 
+    </div> 
+    <div class="bg" >
+         <img src="https://as2.ftcdn.net/v2/jpg/08/57/07/49/1000_F_857074992_BIEIFGvat0pEBOaZFEDH8mmSHQF0m6HW.jpg" onclick="openimg(this.src)">
+         <img src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?t=st=1723873344~exp=1723876944~hmac=3aaf42cf943a6f8bb6ba4eef9343b19d4643178df4c375663324181acd2eefab&w=996" onclick="openimg(this.src)"/>
+         <img src="https://img.freepik.com/free-photo/nature-mountains_1204-279.jpg?t=st=1723865838~exp=1723869438~hmac=33c9ddcff7c0fc36c0a2cda7fe8b109c093421465a04bf57c5ab7a6844fb68d2&w=996" onclick="openimg(this.src)"/>
+         <img src="https://img.freepik.com/free-photo/ai-generated-fall-leaves-picture_23-2150648384.jpg?t=st=1723874195~exp=1723877795~hmac=f9ded6101909b74afdc3d75002a1ff1fbb4167d408a332bc50c46453d65c5e7e&w=1060" onclick="openimg(this.src)" />    
+         <img src="https://img.freepik.com/free-photo/panoramic-shot-top-snow-covered-mountain-cloudy-skies_181624-15634.jpg?t=st=1723874290~exp=1723877890~hmac=83eb0d0f4a9cbda51aba286857d5011969a34de0724f9969c89b8778edd834cc&w=996" onclick="openimg(this,src)"/>  
+         <img src="https://img.freepik.com/free-photo/water-texture-background-brown-leaf-glass-window_53876-145232.jpg?t=st=1723874398~exp=1723877998~hmac=e26f25e044791d40bdb27a94da10ae4be001ad33d68a595c84da1867ead56227&w=996" onclick="openimg(this.src)">  
+    </div>  
+    <script> 
+        function openimg(pic){
+             fullimgbox.style.display = "flex";
+             fullimg.src=pic;
+            }
+
+        function closeimg(pic){
+            fullimgbox.style.display = "none";
+        }    
+    </script>
+</body>
+
+</html> 
